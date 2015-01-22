@@ -1,5 +1,5 @@
 # checks /etc/issue and /etc/issue.net to for current distro
-if [ -d /cygdrive] ; then
+if [ -d /cygdrive ] ; then
   #best to cry 
 elif [ -n "`egrep -i 'Ubuntu|Debian|Mint' /etc/issue*`" ] ; then
   alias install='sudo apt-get install'

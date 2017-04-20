@@ -23,6 +23,7 @@ elif [ -n "`uname | grep -si 'Darwin'`" ] ; then
   alias update='brew update'
   alias ls='ls -G'            # classify files in colour
   alias ll='ls -lahG'           # long list
+  source <(kubectl completion zsh)
 else
   echo "distro not found by zsh-distroalias.plugin.zsh"
 fi
